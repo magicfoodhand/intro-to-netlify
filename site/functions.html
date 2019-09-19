@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Functions</title>
+        <meta name="description" content="Intro to Netlify Functions">
+        <meta name="author" content="lavabear">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+
+    <body>
+        <h1>Intro to Netlify Functions</h1>
+        <div><a href="/" class="back-button">Back</a></div>
+        
+        <p>
+            <a href="https://www.netlify.com/docs/functions/" target="_blank rel noopener">Netlify Functions</a> 
+            are backed by AWS Lambda and support running Go or Javascript.
+        </p>
+
+        <q>
+            By default all serverless functions are deployed to AWS Lambda in their us-east-1 region, 
+            with 1024MB of memory and a 10 second execution limit.
+        </q>
+
+        <p>
+            Functions can be accessed with their URLs in the format 
+            <em>/.netlify/functions/file_name</em>.
+        </p>
+        <p> 
+            All HTTP methods (except HEAD) can be used to trigger the function.
+        </p>
+
+        <h3>Examples</h3>
+        <ul>
+            <li><a href="/.netlify/functions/hello">Hello</a></li>
+            <li><a href="/.netlify/functions/hello-async">Hello (async)</a></li>
+        </ul>
+    </body>
+</html>

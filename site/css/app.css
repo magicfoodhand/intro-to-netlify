@@ -1,0 +1,27 @@
+form {
+    display: grid;
+    grid-gap: 1em;
+}
+
+form > input, form > textarea {
+    font-size: 2em;
+}
+
+form > button {
+    font-size: 1.5em; 
+}
+
+body {
+    max-width: 25em;
+    margin: auto;
+    font-size: 1.1rem; 
+}
+
+.back-button {
+    padding: 1em;
+    display: block;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "intro-to-netlify",
+  "version": "1.0.0",
+  "description": "An intro to netlify forms and functions",
+  "repository": "git@github.com:lavabear/intro-to-netlify.git",
+  "author": "lavabear <mpmcg37@aol.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-p build:**",
+    "build:app": "yarn install",
+    "build:lambda": "netlify-lambda build api",
+    "postinstall": "netlify-lambda install",
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "netlify-lambda": "^1.6.3"
+  },
+  "devDependencies": {
+    "netlify-cli": "^2.15.0"
+  }
+}

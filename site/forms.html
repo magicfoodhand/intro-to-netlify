@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Forms</title>
+        <meta name="description" content="Intro to Netlify Forms">
+        <meta name="author" content="lavabear">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+
+    <body>
+        <h1>Intro to Netlify Forms</h1>
+        <a href="/" class="back-button">Back</a>
+
+        <p>
+            <a href="https://www.netlify.com/docs/form-handling/" target="_blank rel noopener">Netlify Forms</a>
+            allow you to, <q>Manage forms and submissions without any server-side code or JavaScript.</q>
+        </p>
+        
+        <p>After a form submission (running on Netlify), the submission-created event/function is triggered</p>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="text" name="name" placeholder="Name">
+            <textarea name="message" placeholder="Leave a message"></textarea>
+            <button type="submit">Save</button>
+        </form>
+    </body>
+</html>
